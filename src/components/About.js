@@ -20,9 +20,9 @@ const About = () => {
       <div className="container mx-auto">
         <div className='flex flex-col lg:flex-row gap-y-10 items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
           {/* image */}
-          <div className='bg-about flex-1 bg-contain bg-no-repeat h-[640px] mix-blend-lighten '></div>
+          <motion.div variants={fadeIn('right',0.3)} initial="hidden" whileInView={'show'} viewport={{once:false,amount:0.7}} className='bg-about flex-1 bg-contain bg-no-repeat h-[640px] mix-blend-lighten '></motion.div>
           {/* text */}
-          <div className='flex-1'>
+          <motion.div variants={fadeIn('left',0.3)} initial="hidden" whileInView={'show'} viewport={{once:false,amount:0.7}} className='flex-1'>
             <h2 className='text-accent h2'>About me.</h2>
             <h3 className='h3 mb-4'>I'm Ayoub Rezaei, i'm a Front-end developer with more than +3 years of experience developing.</h3>
             <p className='mb-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti aspernatur consequatur, quisquam veritatis quasi sequi eum porro ipsam ratione libero.</p>
@@ -63,7 +63,7 @@ const About = () => {
               <button className='btn btn-lg'>Contact me</button>
               <a href="#" className='text-gradient btn-link'>My Portfolio</a>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
   </div>;
