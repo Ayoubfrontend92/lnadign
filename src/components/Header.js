@@ -3,7 +3,7 @@ import React from 'react';
 import Logo from '../assets/logo.svg'
 
 const Header = () => {
-  return <header  className='py-8'>
+  return  (<header  className='py-8'>
           <div className='container mx-auto'>
             <div className='flex justify-between items-center'>
               <a href="#">
@@ -13,7 +13,7 @@ const Header = () => {
               <button className='btn font-secondary btn-sm'>Work white me </button>
             </div>
           </div>
-        </header>;
+        </header>);
 };
 
 export default Header;

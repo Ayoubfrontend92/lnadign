@@ -30,7 +30,7 @@ const service = [
 
 
 const Services = () => {
-  return <section  className='section' id='services'>
+  return (<section  className='section' id='services'>
     <div className='container mx-auto'>
        <div className='flex flex-col lg:flex-row'>
          <motion.div variants={fadeIn('left',0.3)} initial="hidden" whileInView={'show'} viewport={{once:false,amount:0.7}} className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0'>
@@ -63,7 +63,7 @@ const Services = () => {
          </motion.div>
        </div>
     </div>
-  </section>;
+  </section>);
 };
 
 export default Services;

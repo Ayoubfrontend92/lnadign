@@ -12,7 +12,9 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 
 const Banner = () => {
-  return <section  className='flex items-center min-h-[85vh] lg:min-h-[78vh]  ' id='home'>
+  return 
+(
+  <section  className='flex items-center min-h-[85vh] lg:min-h-[78vh]  ' id='home'>
 
     <div className="container mx-auto">
       <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
@@ -70,7 +72,9 @@ const Banner = () => {
       </div>
     </div>
 
-  </section>;
+  </section>
+)
+  ;
 };
 
 export default Banner;
